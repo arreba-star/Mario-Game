@@ -17,6 +17,7 @@ function setup() {
 	
 	video = createCapture(VIDEO);
 	video.size(800,400);
+	
 	video.parent('game_console');
 
 	poseNet = ml5.poseNet(video, modelLoaded);
@@ -41,9 +42,3 @@ function modelLoaded() {
 function draw() {
 	game();
 }
-
-
-
-
-
-
